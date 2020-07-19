@@ -24,7 +24,7 @@ fetchCookies = () => {
 
 ```javascript
 fetchCookies = () => {
-  axios.get("localhost:8000/cookies");
+  axios.get("http://localhost:8000/cookies");
 };
 ```
 
@@ -32,7 +32,7 @@ fetchCookies = () => {
 
 ```javascript
 fetchCookies = () => {
-  const response = axios.get("localhost:8000/cookies");
+  const response = axios.get("http://localhost:8000/cookies");
   console.log("fetchCookies -> response", response);
 };
 ```
@@ -41,7 +41,7 @@ fetchCookies = () => {
 
 ```javascript
 fetchCookies = () => {
-  const response = await axios.get("localhost:8000/cookies");
+  const response = await axios.get("http://localhost:8000/cookies");
   console.log("fetchCookies -> response", response);
 };
 ```
@@ -52,7 +52,7 @@ fetchCookies = () => {
 
 ```javascript
 fetchCookies = async () => {
-  const response = await axios.get("localhost:8000/cookies");
+  const response = await axios.get("http://localhost:8000/cookies");
   console.log("fetchCookies -> response", response);
 };
 ```
@@ -61,7 +61,7 @@ fetchCookies = async () => {
 
 ```javascript
 fetchCookies = async () => {
-  const response = await axios.get("localhost:8000/cookies");
+  const response = await axios.get("http://localhost:8000/cookies");
   this.cookies = response.data;
 };
 ```
@@ -69,4 +69,3 @@ fetchCookies = async () => {
 10. Our cookies are now coming from the backend! Amazing. We can delete `cookies.js` and the import!
 
 11. Also, set the initial value of `cookies` to an empty array.
-

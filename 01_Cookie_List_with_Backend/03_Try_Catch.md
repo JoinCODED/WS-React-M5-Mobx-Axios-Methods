@@ -4,7 +4,7 @@ What if there was an error when fetching? We need to handle it.
 
 ```javascript
 fetchCookies = async () => {
-  const response = await axios.get("localhost:8000/coies");
+  const response = await axios.get("http://localhost:8000/coies");
   this.cookies = response.data;
 };
 ```
