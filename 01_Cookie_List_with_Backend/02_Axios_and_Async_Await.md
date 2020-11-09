@@ -68,4 +68,18 @@ fetchCookies = async () => {
 
 10. Our cookies are now coming from the backend! Amazing. We can delete `cookies.js` and the import!
 
-11. Also, set the initial value of `cookies` to an empty array.
+11. Final touches... Set the initial value of `cookies` to an empty array.
+
+12. Since `fetchCookies` will be used to get the array of cookies from the API and store them in `cookieStore`'s `cookies` array, we need to set `fetchCookies` as an `action` in the `constructor`.
+
+```javascript
+constructor() {
+    makeObservable(this, {
+      cookies: observable,
+      fetchCookies: action,
+      createCookie: action,
+      updateCookie: action,
+      deleteCookie: action,
+    })
+  }
+```
