@@ -20,7 +20,7 @@ fetchCookies = () => {
 };
 ```
 
-4. `get` method requires one argument, which is the URL of the request. Our backend is running on `localhost:8000`, and our cookies are on the path`/cookies`. So this will be our path:
+4. `get` method requires one argument, which is the URL of the request. Our backend is running on `localhost:8000`, and our cookies are on the path `/cookies`. So this will be our path:
 
 ```javascript
 fetchCookies = () => {

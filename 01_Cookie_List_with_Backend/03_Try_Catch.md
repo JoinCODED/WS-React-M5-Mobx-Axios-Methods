@@ -4,7 +4,7 @@ What if there was an error when fetching? We need to handle it.
 
 ```javascript
 fetchCookies = async () => {
-  const response = await axios.get("http://localhost:8000/coies");
+  const response = await axios.get("http://localhost:8000/cookies");
   this.cookies = response.data;
 };
 ```
@@ -14,7 +14,7 @@ fetchCookies = async () => {
 ```javascript
 fetchCookies = async () => {
   try {
-    const response = await axios.get("http://localhost:8000/coies");
+    const response = await axios.get("http://localhost:8000/cookies");
     this.cookies = response.data;
   } catch (error) {}
 };
@@ -25,7 +25,7 @@ fetchCookies = async () => {
 ```javascript
 fetchCookies = async () => {
   try {
-    const response = await axios.get("http://localhost:8000/coies");
+    const response = await axios.get("http://localhost:8000/cookies");
     this.cookies = response.data;
   } catch (error) {
     console.error("CookieStore -> fetchCookies -> error", error);
