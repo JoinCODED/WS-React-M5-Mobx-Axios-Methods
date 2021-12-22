@@ -3,7 +3,7 @@ We have our data ready in the backend. But how can we send a request to the back
 1. Let's start with installing it
 
 ```shell
-  $ yarn add axios
+  $ npm install axios
 ```
 
 2. Let's import `axios` in our store
