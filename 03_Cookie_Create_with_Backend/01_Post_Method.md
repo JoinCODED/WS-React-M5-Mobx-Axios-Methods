@@ -17,7 +17,7 @@ createCookie = (newCookie) => {
   //   this.cookies.push(newCookie);
   try {
   } catch (error) {
-    console.log("CookieStore -> createCookie -> error", error);
+    console.log('CookieStore -> createCookie -> error', error);
   }
 };
 ```
@@ -40,7 +40,7 @@ try {
 
 ```javascript
 try {
-  const res = await axios.post("http://localhost:8000/cookies", newCookie);
+  const res = await instance.post("/cookies", newCookie);
 }
 ```
 
@@ -48,7 +48,7 @@ try {
 
 ```javascript
 try {
-  const res = await axios.post("http://localhost:8000/cookies", newCookie);
+  const res = await instance.post("/cookies", newCookie);
   console.log("CookieStore -> createCookie -> res", res);
 }
 ```
@@ -59,7 +59,7 @@ try {
 
 ```javascript
 try {
-  const res = await axios.post("http://localhost:8000/cookies", newCookie);
+  const res = await instance.post("/cookies", newCookie);
   this.cookies.push(res.data);
 }
 ```

@@ -21,7 +21,7 @@ updateCookie = async (updatedCookie) => {
   // for (const key in cookie) cookie[key] = updatedCookie[key];
   try {
   } catch (error) {
-    console.log("CookieStore -> updateCookie -> error", error);
+    console.log('CookieStore -> updateCookie -> error', error);
   }
 };
 ```
@@ -44,8 +44,8 @@ try {
 
 ```javascript
 try {
-  await axios.put(
-    `http://localhost:8000/cookies/${updatedCookie.id}`,
+  await instance.put(
+    `/cookies/${updatedCookie.id}`,
     updatedCookie
   );
 }
@@ -59,8 +59,8 @@ try {
 
 ```javascript
 try {
-  await axios.put(
-    `http://localhost:8000/cookies/${updatedCookie.id}`,
+  await instance.put(
+    `/cookies/${updatedCookie.id}`,
     updatedCookie
   );
   const cookie = this.cookies.find((cookie) => cookie.id === updatedCookie.id);
