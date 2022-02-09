@@ -10,13 +10,13 @@ But Axios has a cool feature called Axios instances, and this is how we are goin
 3. Now we will create our instance using the `axios.create` method:
    ```js
    axios.create({
-     baseURL: `http://localhost:3000/`,
+     baseURL: `http://localhost:3000`,
    });
    ```
 4. As you see, we took the part that is alwayes the same across our api calls and stored it in this instance. next we have to export this instance:
    ```js
    export default axios.create({
-     baseURL: `http://localhost:3000/`,
+     baseURL: `http://localhost:3000`,
    });
    ```
 5. In your store, were you do your api calls, import the instance we just created:
