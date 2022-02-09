@@ -21,7 +21,7 @@ But Axios has a cool feature called Axios instances, and this is how we are goin
    ```
 5. In your store, were you do your api calls, import the instance we just created:
    ```js
-   import instanse from './instance.js';
+   import instance from './instance.js';
    ```
 6. Now replace the axios call in the fetch cookie method with our instance:
 
